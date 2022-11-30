@@ -19,13 +19,13 @@ const user = urlParams.get("user") || process.env.REACT_APP_USER_ID;
 
 const theme = urlParams.get("theme") || "light";
 
-const userToken =
+export const userToken =
   urlParams.get("user_token") || process.env.REACT_APP_USER_TOKEN;
 
 const targetOrigin =
   urlParams.get("target_origin") || process.env.REACT_APP_TARGET_ORIGIN;
 
-const authToken = cookies.get("token");
+export const authToken = cookies.get("token");
 interface NewStreamChatType extends StreamChatType {
   fullName: string;
 }
