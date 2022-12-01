@@ -74,3 +74,6 @@ export const WorkspaceController = ({
     </WorkspaceControllerContext.Provider>
   );
 };
+
+export const useWorkspaceController = () =>
+  useContext(WorkspaceControllerContext);
